@@ -62,6 +62,7 @@ img {
 .card-img {
     max-width: 100%;
     max-height: 420px;
+    object-fit: cover;
 }
 
 .card-content {
