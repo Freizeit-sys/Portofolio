@@ -116,6 +116,7 @@ img {
 }
     .card-text {
         font-size: 0.8em;
+        margin-top: 8px;
     }
 }
 
@@ -134,5 +135,6 @@ img {
 
     .card-text {
         font-size: 0.3em;
+        margin-top: 6px;
     }
 }
