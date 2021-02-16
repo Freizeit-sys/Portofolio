@@ -41,7 +41,7 @@ img {
     margin-bottom: 100px;
 }
 
-.container:hover {
+.card:hover {
     transform: scale(1.2);
     opacity: 0.8;
     cursor: pointer;
@@ -96,6 +96,46 @@ img {
 /* feature */
 
 /* feature */
+
+.more-info {
+    display: block;
+    text-align: left;
+    margin: auto;
+    margin-top: 50px;
+    color: #bdbdbd;
+}
+
+.more-info h1 {
+    margin-bottom: 20px;
+    font-family: "Robot", serif;
+    line-height: 1;
+    letter-spacing: 0.12em;
+}
+
+.more-info p {
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.8em;
+    line-height: 2;
+}
+
+footer {
+    padding-bottom: 60px;
+}
+
+.inner {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer p {
+    display: block;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.8em;
+    color: #bdbdbd;
+}
 
 /* media Queries 768 */
 @media screen and (max-width: 768px) {
