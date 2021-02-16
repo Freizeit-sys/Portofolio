@@ -108,6 +108,7 @@ img {
 .more-info h1 {
     margin-bottom: 20px;
     font-family: "Robot", serif;
+    font-size: 1.0em;
     line-height: 1;
     letter-spacing: 0.12em;
 }
@@ -178,6 +179,21 @@ footer {
     .card-text {
         font-size: 0.7em;
         margin-top: 6px;
+    }
+
+    .more-info h1 {
+        font-size: 0.8em;
+    }
+    
+    .more-info p {
+        display: block;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 0.7em;
+        line-height: 2;
+    }
+
+    .footer p {
+        font-size: 0.7em;
     }
 }
 /* media Queries 480 */
