@@ -62,6 +62,7 @@ img {
 }
 
 .card:hover {
+    transition: 0.5s;
     transform: scale(1.2);
     opacity: 1.0;
     cursor: pointer;

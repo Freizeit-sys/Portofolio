@@ -1,3 +1,4 @@
+// javascrip を無効にしている人に対処する必要がある
 window.onload = function() {
     fadeIn();
 
