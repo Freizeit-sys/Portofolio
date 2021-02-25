@@ -180,8 +180,16 @@ p{
     color: rgb(110, 217, 184);
 }
 
+.detailArea .box p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: darkgray;
+    word-break:keep-all;
+}
+
 .detailArea .text {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
     font-size: 1.3em;
     color: darkgray;
