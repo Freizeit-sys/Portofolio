@@ -126,7 +126,7 @@ p{
 }
 
 #contents {
-    margin-top: 8em;
+    
 }
 
 #contents .contentsArea {
@@ -151,12 +151,34 @@ p{
     margin-bottom: 4em;
 }
 
-#clientWorks .textArea{
-	font-family: "azo-sans-web",sans-serif;
-}
-
 .detailArea {
 
+}
+
+.detailArea .boxImg {
+    display: inline-block;
+    vertical-align: center;
+}
+
+.detailArea .boxText {
+    display: inline-block;
+    vertical-align: center;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.detailArea .boxText h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 3.5em;
+    color: rgb(110, 217, 184);
+}
+
+.detailArea .boxText p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: darkgray;
 }
 
 .main {
@@ -172,8 +194,8 @@ p{
 }
 
 .contentsDetail {
-    display: block;
-    background-color: rgba(0,0,0,0.22);
+    display: none;
+    background-color: rgba(0,0,0,0.12);
 }
 
 .viewMore {
@@ -188,7 +210,7 @@ p{
 	cursor: pointer;
 	width: 50px;
 	height: 50px;
-		
+	
     -moz-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -209,7 +231,7 @@ p{
 .detailArea {
     width: 900px;
     margin: 0 auto;
-    padding: 60px 0 20px;
+    padding: 60px 0 60px;
 }
 
 .imgArea {
