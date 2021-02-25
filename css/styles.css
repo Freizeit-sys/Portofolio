@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------
-reset
----------------------------------------------------------*/
+   reset
+   ---------------------------------------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html{
-    overflow-y: scroll;
+    overflow-y: scroll; 
 }
 
 blockquote, q {
@@ -86,17 +86,18 @@ img{
     border: 0;
     line-height: 1;
     vertical-align: middle;
+    object-fit: cover;
 }
 
-/* ---------------------------------------------------------
-   Author's styles
-   ---------------------------------------------------------*/
+html{
+
+}
 
 body {
     background-color: #3D3D3D;
 	margin: 0;
 	padding: 0;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 12px;
 	line-height: 1;
 	letter-spacing: 0.12em;
@@ -108,14 +109,54 @@ p{
 	padding: 0;
 }
 
+/* structure */
 .wrap {
-    padding-top: 4em;
-    padding-bottom: 4em;
+    margin: 0;
+    padding: 0;
 }
 
-.main_area .content_area {
+#mainTitle{
+	
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 1200;
+}
+
+#contents {
+    margin-top: 8em;
+}
+
+#contents .contentsArea {
     margin-top: 40px;
     margin-bottom: 4em;
+    transition: 0.4s;
+}
+
+#contents .contentsArea:hover {
+    transform: scale(1.05);
+}
+
+#contents .imgArea {
+    margin-bottom: 1em;
+}
+
+#contents h1#mainTitle {
+    padding: 16em 0;
+}
+
+#contents .titleArea {
+    margin-bottom: 4em;
+}
+
+#clientWorks .textArea{
+	font-family: "azo-sans-web",sans-serif;
+}
+
+.detailArea {
+
 }
 
 .main {
@@ -123,91 +164,188 @@ p{
     margin: 0 auto;
 }
 
-.card {
+.wide {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 80px;
+}
+
+.contentsDetail {
+    display: block;
+    background-color: rgba(0,0,0,0.22);
+}
+
+.viewMore {
+    cursor: pointer;
+}
+
+.closeBt{
+	display: block;
+	position: absolute;
+	right:20px;
+	top:20px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+		
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+	
+}
+
+.closeBt:hover{
+	cursor: pointer;
+	-webkit-transform: rotate(180deg); 
+    -moz-transform: rotate(180deg); 
+    -o-transform: rotate(180deg); 
+    -ms-transform: rotate(180deg); 
+    transform: rotate(180deg); 
+}
+
+.detailArea {
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 0 20px;
+}
+
+.imgArea {
     position: relative;
     width: 900px;
     height: 420px;
-    border-radius: 10px;
-    opacity: 0;
-    transform : translate(0, 50px);
-    transition: 0.4s;
     overflow: hidden;
+
+    border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
     0 10px 10px rgba(0,0,0,0.22);
 }
 
-.card.active {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.view_more{
-    margin-bottom: 4em;
-	cursor: pointer;
-}
-
-.image_area {
-    position: relative;
-    width: 900px;
-    height: 420px;
-    overflow: hidden;
-    margin-bottom: 1em;
-}
-
-.image_area div {
+.imgArea div {
     position: absolute;
 }
 
-.image_area div img { 
+.imgArea div img { 
     width: 900px;
     height: 420px;
     object-fit: cover;
 }
 
-.image_area .overlay {
+.imgArea .title {
     display: block;
     width: 900px;
     height: 420px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgb(0,0,0,0.6);
     display: none;
 }
 
-.more_info {
-    margin-bottom: 160px;
+.imgArea .title p {
+    padding: 200px 40px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 100%;
+    color: #fff;
 }
 
-.more_info .title {
-    padding-bottom: 3px;
-    margin-bottom: 24px;
-    color: darkgray;
-    font-family: 'Times New Roman', Times, serif ;
-    font-size: 2em;
-    font-weight: 100;
+footer{
+	padding-bottom: 60px;
 }
 
-.more_info p {
-    margin-bottom: 1em;
-    color: darkgray;
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+#moreInfo{
+	margin-bottom: 160px;
 }
 
-footer {
-    margin-bottom: 60px;
+#moreInfo h1{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1.8em;
+	margin-bottom: 1em;
+    color:darkgray;
 }
 
-footer p {
-    color: darkgray;
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+#moreInfo p{
+	margin-bottom: 1em;
+    color:darkgray;
+}
+
+/* other */
+
+.detailArea:before,
+.detailArea:after,
+.snsSection ul:before,
+.snsSection ul:after,
+.socialBt ul:before,
+.socialBt ul:after,
+.clear:before,
+.clear:after,
+.multiColumn:before,
+.multiColumn:after,
+.thumbList01:before,
+.thumbList01:after,
+#footerNav ul:before,
+#footerNav ul:after
+{
+    content: " ";
+    display: table;
+}
+
+
+.detailArea:after,
+.nextPrev:after,
+.snsSection ul:after,
+.socialBt ul:after,
+.clear:after,
+.multiColumn:after,
+.thumbList01:after,
+#footerNav ul:after {
+    clear: both;
+}
+
+.detailArea,
+.nextPrev,
+.snsSection ul,
+.socialBt ul,
+.clear,
+.multiColumn,
+.thumbList01,
+#footerNav ul {
+    *zoom: 1;
 }
 
 /* ---------------------------------------------------------
-   other
+   Print styles
    ---------------------------------------------------------*/
+@media print {
+* {
+    color:#000 !important;
+    box-shadow:none !important;
+    text-shadow:none !important;
+    background:transparent !important;
+}
+html { background-color:#f8f8f8; }
+/* Hide navigation */
+nav { display:none; }
 
-@media screen and (max-width: 480px) {
+/* Show link destinations in brackets after the link text */
+a[href]:after { content: " (" attr(href) ") "; }
+a[href] {
+    font-weight:bold;
+    text-decoration:underline;
+    color:#06c;
+    border:none;
+}
+/* Don't show link destinations for JavaScript or internal links */ 
+a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }
 
+/* Show abbr title value in brackets after the text */
+abbr[title]:after { content: " (" attr(title) ")"; }
+
+figure { 
+    margin-bottom:1em; 
+    overflow:hidden;
+}
+
+figure img { border:1px solid #000; }
 }
