@@ -300,6 +300,32 @@ p{
 }
 /* Skill */
 
+/* Work1 */
+.detailArea .title-area {
+    margin-bottom: 3em;
+}
+
+.detailArea .title {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    font-weight: bold;
+    color: darkgray;
+    margin-bottom: 0.4em;
+}
+
+.detailArea .description p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    color: darkgray;
+}
+
+.detailArea .contents-area  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: darkgray;
+}
+/* Work1 */
+
 .main {
     width: 900px;
     margin: 0 auto;
